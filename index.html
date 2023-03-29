@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" You can modify your pictur with some filters and chose how you want it (png) or (jpeg) But the pictur should be 600 in both dimensions">
+    <title>Image Handlling</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+   <link rel="stylesheet" href="The_style.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary ">
+        <div class="container-fluid "id="navC">
+          <a class="navbar-brand " href="#" id="brandname">
+            <img src="./images/Wratten-filters-ee46789.jpg" alt="Logo" width="50" height="44" class="d-inline-block align-text-top rounded-circle">
+            <h2 id="brandN">Image Filters</h2>
+          </a>
+        </div>
+      </nav>
+    <div id="alerto"></div>
+    <div class="container">
+        <div class="img">
+            <div class="img-box">
+                <img  alt="" id="img">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="upload">
+                <label for="upload">Upload</label>
+                <input type="file" name="" id="upload">
+            </div>
+        </div>
+        <div class="filters">
+            <ul>
+<li><label for="saturate">Saturate</label>
+<input type="range"  id="saturate"min="0" max="200" value="100">
+</li>
+<li><label for="contrast">Contrast</label>
+    <input type="range"  id="contrast"min="0" max="200" value="100"></li>
+<li><label for="brightness">Brightness</label>
+    <input type="range"  id="brightness"min="0" max="200" value="100"></li>
+<li><label for="sepia">Sepia</label>
+    <input type="range"  id="sepia"min="0" max="200" value="0"></li>
+<li><label for="grayscale">Grayscale</label>
+    <input type="range"  id="grayscale" step="0.1"min="0" max="1" value="0"></li>
+<li><label for="blur">Blur</label>
+    <input type="range"  id="blur" min="0" max="10" value="0"></li>
+<li><label for="hue-rotate">Hue Rotate</label>
+    <input type="range"  id="hue-rotate" min="0" max="350" value="0"></li>
+ <li><label for="invert">Invert</label>
+    <input type="range"  id="invert" min="0" max="200" value="0"></li>
+
+            
+
+
+
+        <li> <a download="Images" id="download">Download</a>
+            <a download="Images" id="png"  >PNG</a>
+            
+        <span onclick=" resetValue()">Reset</span>
+        
+        </li>
+        
+            </ul>
+            
+        </div>
+    </div>
+    <footer class="centr">
+    <div class="footer-menu">
+        <ul class="f-menu">
+           <li><a href="">Home</a></li>
+           <li><a href="+212 640151758">About</a></li>
+           <li><a href="https://www.facebook.com/profile.php?id=100036547980205">Contact</a></li>
+          
+        </ul>
+        <ul class="copyright"> <li ><a >CopyRights RachidMayene@gmail.com</a></li></ul>
+        
+       </div>
+    </footer>
+    <script src="The_JavaS.js"></script>
+</body>
+</html>
