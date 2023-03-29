@@ -50,7 +50,7 @@ function showAlert() {
 
   alert(
     "Please chose a picture that contains 600/600 in it's dimentions",
-    "primary"
+    "success"
   );
 }
 
