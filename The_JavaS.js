@@ -34,13 +34,13 @@ function resetValue() {
 
 function showAlert() {
   const alertPlaceholder = document.getElementById("alerto");
+
   const alert = (message, type) => {
     const wrapper = document.createElement("div");
     wrapper.innerHTML = [
-      `<div class="alert alert-${type} d-flex  alert-dismissible fade show" role="alert"id="navB">`,
-
-      `<div>${message}</div>  `,
-      `  <input type="button" class="btn-close d-flex fade show" data-bs-dismiss="alert" aria-label="Close"></input>`,
+      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+      `   <div>${message}</div>`,
+      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
       "</div>",
     ].join("");
 
