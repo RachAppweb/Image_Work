@@ -19,6 +19,7 @@ div#navB {
 div#alerto {
     justify-content: center;
     display: flex;
+    margin-top: 14px;
     
 }
 a#brandname {
