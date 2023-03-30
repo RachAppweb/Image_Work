@@ -32,31 +32,10 @@ function resetValue() {
   ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 }
 
-function showAlert() {
-  const alertPlaceholder = document.getElementById("alerto");
-
-  const alert = (message, type) => {
-    const wrapper = document.createElement("div");
-    wrapper.innerHTML = [
-      `<div class="alert alert-${type} alert-dismissible" fade show role="alert">`,
-      `   <div>${message}</div>`,
-      '   <button type="button" class="btn-close" d-flex fade show data-bs-dismiss="alert" aria-label="Close"></button>',
-      "</div>",
-    ].join("");
-
-    alertPlaceholder.append(wrapper);
-  };
-
-  alert(
-    "Please chose a picture that contains 600/600 in it's dimentions",
-    "success"
-  );
-}
-
 window.onload = function () {
   setTimeout(() => {
-    showAlert();
-    // alert(`Please chose a picture that contains 600/600 in it's dimentions  `)
+    // showAlert();
+    alert(`Please chose a picture that contains 600/600 in it's dimentions  `);
   }, 5000);
   if (img.src === "") {
     download.style.display = "none";

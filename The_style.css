@@ -16,12 +16,14 @@ div#navB {
     background:linear-gradient(77deg, rgb(188, 33, 33), rgb(22, 22, 112)) ;
     border-radius: 14px;
 }
+/*
+it doesn't work
 div#alerto {
     justify-content: center;
     display: flex;
     margin-top: 14px;
     
-}
+} */
 a#brandname {
     display: flex;
 }
