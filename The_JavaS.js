@@ -40,7 +40,7 @@ function showAlert() {
       `<div class="alert alert-${type} d-flex  alert-dismissible fade show" role="alert"id="navB">`,
 
       `<div>${message}</div>  `,
-      `  <button type="button" class="btn-close d-flex fade show" data-bs-dismiss="alert" aria-label="Close"></button>`,
+      `  <input type="button" class="btn-close d-flex fade show" data-bs-dismiss="alert" aria-label="Close"></input>`,
       "</div>",
     ].join("");
 
